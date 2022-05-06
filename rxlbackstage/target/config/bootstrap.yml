@@ -1,0 +1,27 @@
+rxl:
+  nacos:
+    server-addr: 101.132.174.238:8848
+    namespace: backstage
+    group: backstage-dev
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: backstage
+  cloud:
+    nacos:
+      config:     # nacos配置
+        file-extension: yaml
+        server-addr: ${rxl.nacos.server-addr}
+        namespace: ${rxl.nacos.namespace}
+        group: ${rxl.nacos.group}
+        # 共享配置
+        shared-configs:
+          - data-id: datasource-dev.yaml
+            group: ${rxl.nacos.group}
+            refresh: true
+      discovery:   #nacos 服务发现
+        server-addr: ${rxl.nacos.server-addr}
+        namespace: ${rxl.nacos.namespace}
+        group: ${rxl.nacos.group}
+        register-enabled: true
