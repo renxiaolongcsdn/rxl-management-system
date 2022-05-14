@@ -1,0 +1,40 @@
+{
+  "name": "rxlvue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@tinymce/tinymce-vue": "^5.0.0",
+    "axios": "^0.26.1",
+    "core-js": "^2.6.5",
+    "element-plus": "^2.1.9",
+    "element-ui": "^2.15.8",
+    "markdown-it": "^13.0.0",
+    "mavon-editor": "^2.10.4",
+    "md-editor-v3": "^1.11.13",
+    "moment": "^2.29.3",
+    "tinymce": "^6.0.1",
+    "vue": "^2.6.10",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "wangeditor": "^4.7.15"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
